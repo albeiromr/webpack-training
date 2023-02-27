@@ -27,7 +27,11 @@ module.exports = {
                 The above order of loaders should be maintained: 'style-loader' comes first and followed 
                 by 'css-loader'. If this convention is not followed, webpack is likely to throw errors. */
                 use: ['style-loader', 'css-loader'],//module loaders
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
         ]
     }
 };
