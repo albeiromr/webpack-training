@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('./myfont.woff2') format('woff2'),
+        url('./myfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 .hello {
     color: red;
+    font-family: 'myfont';
 }
